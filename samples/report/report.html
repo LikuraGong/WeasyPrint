@@ -37,7 +37,28 @@
         <li><a href="#typography-title"></a></li>
       </ul>
     </article>
-
+    
+    <article id="contents">
+      <h2 style="font-weight: 800;font-size: 24pt;height: 20%;">TABLE OF CONTENTS</h2>
+      <div style="background:#1c4380;margin: 0 -2cm; height: 80%;width: 100%;">
+        <h3 style="font-size: 30px;font-style: oblique;color: white;padding: 0px 0px 0px 80px; margin: 1px;">Index</h3>
+        <ul style="font-size: 24px;font-family: Baskerville;padding: 0 0 0 50px;margin: 0px 20px 0px 60px;;color: white;">
+          <li><a href="#agreement_detail-title"></a></li>
+          {% if has_agenda %}
+          <li><a href="#agenda-title"></a></li>
+          {% endif %}
+          {% if has_notes %}
+          <li><a href="#notes-title"></a></li>
+          {% endif %}
+          {% if has_tasks %}
+          <li><a href="#tasks-title"></a></li>
+          {% endif %}
+          {% if has_general_info %}
+          <li><a href="#general-title"></a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </article>
     <article id="columns">
       <h2 id="columns-title">Big title on left page, with text on columns</h2>
 
